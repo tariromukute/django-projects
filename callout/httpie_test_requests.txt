@@ -1,0 +1,117 @@
+httpie test
+==================================
+
+http --json GET http://127.0.0.1:8000/account/user/%user_id%/ "Authorization: Token %token%"
+
+http -f POST http://127.0.0.1:8000/media/upload/ "Authorization: Token %token%" media@%filepath%
+
+
+http --json POST http://127.0.0.1:8000/account/register/ email=email password=pwd first_name=first last_name=last date_of_birth=1993-01-01
+
+http http://127.0.0.1:8000/account/verify/<user_id>/<code>/
+
+http --json http://127.0.0.1:8000/account/login/ username=%email% password=%pwd%
+
+http --json GET http://127.0.0.1:8000/user/<user_id>/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/account/user/edit/ "Authorization: Token %token%" first_name=firstone last_name=lastone date_of_birth=1993-01-01
+
+http --json GET http://127.0.0.1:8000/account/user/details/%user_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/account/user/display_picture/%media_id%/ "Authorization: Token %token%"
+
+http --json DELETE  http://127.0.0.1:8000/account/user/display_picture/ "Authorization: Token %token%"
+
+
+
+http -f POST http://127.0.0.1:8000/media/upload/ "Authorization: Token %token%" media@%filepath%
+
+
+
+http --json GET http://127.0.0.1:8000/post/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/post/%post_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/post/edit/%post_id%/ "Authorization: Token %token%"
+
+http --json DELETE http://127.0.0.1:8000/post/remove/%post_id%/ "Authorization: Token %token%"
+
+http --json POST http://127.0.0.1:8000/post/remark/%post_id%/ "Authorization: Token %token%" remark=initialremark remark_type=open
+
+http --json GET http://127.0.0.1:8000/post/remarks/%post_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/post/edit/remark/%remark_id%/ "Authorization: Token %token%" remark=editedremark
+
+http --json DELETE http://127.0.0.1:8000/post/remove/remark/%remark_id%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/post/count/remarks/%post_id%/ "Authorization: Token %token%"
+
+http --json POST http://127.0.0.1:8000/post/reaction/%post_id%/%reaction_type%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/post/reactions/%post_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/post/edit/reaction/%reaction_id%/%reaction_type%/ "Authorization: Token %token%"
+
+http --json DELETE http://127.0.0.1:8000/post/remove/reaction/%reaction_id%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/post/count/reactions/%post_id%/ "Authorization: Token %token%"
+
+
+
+http --json POST http://127.0.0.1:8000/callout/challenge/ "Authorization: Token %token%" pub_date= o_posts=
+
+http --json GET http://127.0.0.1:8000/callout/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/callout/%callout_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/callout/edit/%callout_id%/ "Authorization: Token %token%"
+
+http --json DELETE http://127.0.0.1:8000/callout/remove/%callout_id%/ "Authorization: Token %token%"
+
+http --json POST http://127.0.0.1:8000/callout/remark/%callout_id%/ "Authorization: Token %token%" remark=initialremark remark_type=open
+
+http --json GET http://127.0.0.1:8000/callout/remarks/%callout_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/callout/edit/remark/%remark_id%/ "Authorization: Token %token%" remark=editedremark
+
+http --json DELETE http://127.0.0.1:8000/callout/remove/remark/%remark_id%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/callout/count/remarks/%callout_id%/ "Authorization: Token %token%"
+
+http --json POST http://127.0.0.1:8000/callout/reaction/%callout_id%/%reaction_type%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/callout/reactions/%callout_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/callout/edit/reaction/%reaction_id%/%reaction_type%/ "Authorization: Token %token%"
+
+http --json DELETE http://127.0.0.1:8000/callout/remove/reaction/%reaction_id%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/callout/count/reactions/%callout_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/callout/challenge/%status%/%o_post_id%/ "Authorization: Token %token%"
+
+
+
+http --json GET http://127.0.0.1:8000/fan/ "Authorization: Token %token%"
+
+http --json DELETE http://127.0.0.1:8000/fan/remove/request/%request_id%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/fan/count/requests/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/fan/%user_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/fan/request/%status%/%request_id%/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/fan/seen/ "Authorization: Token %token%"
+
+http --json POST http://127.0.0.1:8000/fan/seen/%user_id%/ "Authorization: Token %token%"
+
+
+
+http --json GET http://127.0.0.1:8000/notification/ "Authorization: Token %token%"
+
+http --json DELETE http://127.0.0.1:8000/notification/remove/%notification_id%/ "Authorization: Token %token%"
+
+http --json GET http://127.0.0.1:8000/notification/count/notifications/ "Authorization: Token %token%"
+
+http --json PUT http://127.0.0.1:8000/notification/seen/%notification_id%/ "Authorization: Token %token%"

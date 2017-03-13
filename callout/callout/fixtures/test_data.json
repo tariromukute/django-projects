@@ -1,0 +1,116 @@
+[
+{
+  "model": "accounts.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$hpLb07CHuZyv$DFWnCbGuYtj9CiyvbmjMKG1lG07PKbVgVPvOZeZXKN4=",
+    "last_login": null,
+    "email": "edittestuser@gmail.com",
+    "user_id": "1708215211X8KFL2U2TD",
+    "first_name": "firstname",
+    "middle_name": "",
+    "last_name": "lastname",
+    "display_picture": null,
+    "cell_number": "",
+    "country": "",
+    "date_of_birth": "1993-01-01",
+    "won": 0,
+    "drew": 0,
+    "lost": 0,
+    "code": "LV4FGFM9V3",
+    "account_type": "PUB",
+    "created": "2017-02-21T17:17:01.364Z",
+    "is_active": true
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$W4u5jJKWfMIi$+g+HLPhiiZNNxJ8/fUL4r8S9Tzca+ObDRaQZHPWc/Fk=",
+    "last_login": null,
+    "email": "getusertest@gmail.com",
+    "user_id": "17082121360H2Q8UNHME",
+    "first_name": "firstname",
+    "middle_name": "",
+    "last_name": "lastname",
+    "display_picture": null,
+    "cell_number": "",
+    "country": "",
+    "date_of_birth": "1993-01-01",
+    "won": 0,
+    "drew": 0,
+    "lost": 0,
+    "code": "BE5F5DQNZR",
+    "account_type": "PUB",
+    "created": "2017-02-21T18:50:30.670Z",
+    "is_active": true
+  }
+},
+{
+  "model": "medias.media",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "media_id": "1708213530I7Z55MK6MH",
+    "media_url": "C:/Users/tariro/OneDrive/Django/CALLOUT/media/17-02-21/1708215211X8KFL2U2TD_1708213530I7Z55MK6MH",
+    "media_type": "",
+    "created": "2017-02-21T18:35:21.096Z"
+  }
+},
+{
+  "model": "medias.media",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "media_id": "1708212136JOMQ35BXW7",
+    "media_url": "C:/Users/tariro/OneDrive/Django/CALLOUT/media/17-02-21/1708215211X8KFL2U2TD_1708212136JOMQ35BXW7",
+    "media_type": "",
+    "created": "2017-02-21T18:36:36.274Z"
+  }
+},
+{
+  "model": "medias.media",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "media_id": "ggggsggsgsgs",
+    "media_url": "C:/Users/tariro/OneDrive/Django/CALLOUT/media/17-02-21/1708215211X8KFL2U2TD_ggggsggsgsgs",
+    "media_type": "",
+    "created": "2017-02-21T19:04:10.898Z"
+  }
+},
+{
+  "model": "medias.media",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "media_id": "1708213704NBLGSEKD8B",
+    "media_url": "C:/Users/tariro/OneDrive/Django/CALLOUT/media/17-02-21/1708215211X8KFL2U2TD_1708213704NBLGSEKD8B",
+    "media_type": "",
+    "created": "2017-02-21T19:04:54.004Z"
+  }
+},
+{
+  "model": "medias.media",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "media_id": "1708211012WM25KHU4Y8",
+    "media_url": "C:/Users/tariro/OneDrive/Django/CALLOUT/media/17-02-21/1708215211X8KFL2U2TD_1708211012WM25KHU4Y8",
+    "media_type": "",
+    "created": "2017-02-21T19:12:24.943Z"
+  }
+},
+{
+  "model": "medias.media",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "media_id": "1708211144JVBUCQEYEE",
+    "media_url": "C:/Users/tariro/OneDrive/Django/CALLOUT/media/17-02-21/1708215211X8KFL2U2TD_1708211144JVBUCQEYEE",
+    "media_type": "",
+    "created": "2017-02-21T19:45:06.080Z"
+  }
+}
+]

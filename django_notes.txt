@@ -1,0 +1,4 @@
+Django Notes
+=========================================
+
+-To empty database tables for an app : python manage.py makemigrations --empty <app_name>

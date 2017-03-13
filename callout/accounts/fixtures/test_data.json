@@ -1,0 +1,50 @@
+[
+{
+  "model": "accounts.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$hpLb07CHuZyv$DFWnCbGuYtj9CiyvbmjMKG1lG07PKbVgVPvOZeZXKN4=",
+    "last_login": null,
+    "email": "edittestuser@gmail.com",
+    "user_id": "1708215211X8KFL2U2TD",
+    "first_name": "firstname",
+    "middle_name": "",
+    "last_name": "lastname",
+    "display_picture": null,
+    "cell_number": "",
+    "country": "",
+    "date_of_birth": "1993-01-01",
+    "won": 0,
+    "drew": 0,
+    "lost": 0,
+    "code": "LV4FGFM9V3",
+    "account_type": "PUB",
+    "created": "2017-02-21T17:17:01.364Z",
+    "is_active": true
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$W4u5jJKWfMIi$+g+HLPhiiZNNxJ8/fUL4r8S9Tzca+ObDRaQZHPWc/Fk=",
+    "last_login": null,
+    "email": "gettestuser@gmail.com",
+    "user_id": "17082121360H2Q8UNHME",
+    "first_name": "firstname",
+    "middle_name": "",
+    "last_name": "lastname",
+    "display_picture": null,
+    "cell_number": "",
+    "country": "",
+    "date_of_birth": "1993-01-01",
+    "won": 0,
+    "drew": 0,
+    "lost": 0,
+    "code": "BE5F5DQNZR",
+    "account_type": "PUB",
+    "created": "2017-02-21T18:50:30.670Z",
+    "is_active": true
+  }
+}
+]
