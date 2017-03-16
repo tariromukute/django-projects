@@ -97,16 +97,6 @@ class FanSeenTestCase(APITestCase):
         #assert that the seen status has changed
         
         
-"""
-    Fixture Data Needed
-    + requesttestuser   => to get list of follow request, from: requestaccept...@gmail.com, requestdecline..@gmail.com       
-                        => to get number of new request, from: requestaccept...@gmail.com, requestdecline..@gmail.com
-                        => to follow public and private user accounts: requestpub..@gmail.com, requestpvt..@gmail.com
-                        => to delete follow request, from: requestdel..@gmail.com
-                        
-    + fantestuser       => put seen on all unseen fans: fanseen1..@gmail.com, fanseen2..@gmail.com
-    + fan2testuser      => put seen  on  an  unseen fan: fanseen1..@gmail.com
-    
-"""  
-                   
+               
+        
         

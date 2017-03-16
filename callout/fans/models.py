@@ -28,7 +28,7 @@ class IDField(models.CharField):
 
 class Fan(models.Model):
     o_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='f_o_user', verbose_name="user being followed")
-    x_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='f_x_user', verbose_name="user being fancied")
+    x_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='f_x_user', verbose_name="user following")
     seen = models.BooleanField("user seen new fan", default=False, db_column='seen')
     created = models.DateTimeField("date and time user followed x_user", auto_now_add=True, db_column='time')
 
@@ -44,7 +44,7 @@ class Request(models.Model):
         ('P', 'pending'),
     )
     request_id = IDField(db_column='externalid')
-    o_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='r_o_user', verbose_name="user receiving the follow reques")
+    o_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='r_o_user', verbose_name="user receiving the follow request")
     x_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='r_x_user', verbose_name="user sending the follow request")
     request_status = models.CharField("follow request status", max_length=2, default='P', choices=STATUS_TYPES, db_column='status')
     created = models.DateTimeField("date and time user followed x_user", auto_now_add=True, db_column='time')
